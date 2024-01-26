@@ -192,19 +192,11 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
-# LMKD/PSI
-ro.lmk.use_psi=true
-ro.lmk.low=1001
-ro.lmk.medium=800
-ro.lmk.critical=0
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=40
-ro.lmk.downgrade_pressure=60
-ro.lmk.kill_heaviest_task=true
-
 # Media
 debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vendor.media.target.version=1
+vendor.sys.media.target.version=1
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
@@ -238,7 +230,10 @@ ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
 
 # RCS
-persist.rcs.supported=0
+persist.rcs.supported=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # USB
 vendor.usb.diag.func.name=diag
